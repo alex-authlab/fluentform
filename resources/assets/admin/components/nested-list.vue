@@ -97,7 +97,6 @@
     import product from './templates/product.vue'
     import paymentMethodHolder from './templates/paymentMethodHolder.vue'
     import inputMultiPayment from './templates/inputMultiPayment.vue';
-    import inputQuantityOptions from "./templates/inputQuantityOptions";
 
     export default {
         name: 'list',
@@ -145,8 +144,7 @@
             ff_inputPaymentMethods: paymentMethodHolder,
             ff_customButton: customButton,
             ff_inputMultiPayment: inputMultiPayment,
-            ff_fieldsRepeatSettings: repeatFields,
-            ff_inputQuantityOptions: inputQuantityOptions
+            ff_fieldsRepeatSettings: repeatFields
         },
         data() {
             return {
