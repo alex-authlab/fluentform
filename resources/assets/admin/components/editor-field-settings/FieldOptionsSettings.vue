@@ -73,6 +73,7 @@ import inputCheckbox from './templates/inputCheckbox.vue';
 import selectOptions from './templates/select-options.vue';
 import advancedOptions from './templates/advanced-options.vue';
 import pricingOptions from './templates/pricing-options.vue';
+import quantityOptions from './templates/quantity-options.vue';
 import prevNextButton from './templates/prevNextButton.vue';
 import selectBtnStyle from './templates/selectBtnStyle.vue';
 import customHookName from './templates/customHookName.vue';
@@ -117,6 +118,7 @@ export default {
         ff_selectOptions: selectOptions,
         ff_advancedOptions: advancedOptions,
         ff_pricingOptions: pricingOptions,
+        ff_quantityOptions: quantityOptions,
         ff_addressFields: addressFields,
         ff_customHookName: customHookName,
         ff_selectBtnStyle: selectBtnStyle,
@@ -154,16 +156,21 @@ export default {
                 elementOptions.push(name);
             });
 
+
+
             _ff.each(this.editItem.settings, (value, name) => {
                 elementOptions.push(name);
             });
 
+
             if (_ff.has(this.editItem, 'options')) {
                 elementOptions.push('options');
             }
+            console.log( elementOptions)
 
             if (_ff.has(this.editItem, 'fields')) {
                 const fieldsTempl = _ff.snakeCase(this.editItem.editor_options.template);
+
                 elementOptions.push(fieldsTempl);
             }
 
