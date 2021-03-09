@@ -4,7 +4,7 @@ Tags: contact form, contact forms, wp forms, forms, form builder, contact form b
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 3.6.68
+Stable tag: 3.6.69
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -321,6 +321,10 @@ The entire source code is <a href="https://github.com/fluentform/fluentform">ava
 11. Asset Loading Comparison with Other Plugins
 
 == Changelog ==
+
+= 3.6.69 (Date: Mar 09, 2021) =
+* Fix Form Scheduling
+* Fix Preview Page Slug
 
 = 3.6.68 (Date: Mar 06, 2021) =
 * PHP 8 deprecated issue fixed
