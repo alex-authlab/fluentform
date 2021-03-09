@@ -292,6 +292,10 @@
             }
         },
         mounted() {
+            //if weekdays is not set initially select all weekday
+            if(!this.form.scheduleForm.selectedDays){
+                this.form.scheduleForm.selectedDays = this.weekdays;
+            }
             this.selectedDays    = this.form.scheduleForm.selectedDays ;
             this.checkAllWeekday = this.selectedDays.length === this.weekdays.length;
 

@@ -77,7 +77,7 @@ add_action('wp', function () use ($app) {
             wp_enqueue_style('fluent-form-preview', $app->publicUrl('css/preview.css'));
         });
 
-        (new \FluentForm\App\Modules\ProcessExteriorModule())->handleExteriorPages($app);
+        (new \FluentForm\App\Modules\ProcessExteriorModule())->handleExteriorPages();
     }
 }, 1);
 
