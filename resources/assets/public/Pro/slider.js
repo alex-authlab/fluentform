@@ -130,6 +130,7 @@ export default function ($, $theForm, fluentFormVars, formSelector) {
                         let $tr = $tbody.find('tr:last').clone().appendTo($tbody);
                         $tr.find('.ff-el-form-control').each((i, el) => {
                             let id = 'ffrpt-' + (new Date()).getTime() + i;
+                            $(el).val(arr[i]);
                             $(el).attr({
                                 id: id,
                                 name: `${elName}[${index}][]`,
